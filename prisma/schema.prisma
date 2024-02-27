@@ -17,7 +17,7 @@ model User {
   id    String  @id @default(uuid())
   name  String
   email String @unique
-  todos     Todo[]
+  todos Todo[]
   
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt 

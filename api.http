@@ -1,6 +1,6 @@
 GET http://localhost:3000/user HTTP/1.1
 ###
-GET http://localhost:3000/user/d1855d80-d1de-49bb-8bde-a07464091fc5 HTTP/1.1
+GET http://localhost:3000/user/00ec3cd3-c0d1-4469-ae48-79aa174443ae HTTP/1.1
 ###
 POST http://localhost:3000/user HTTP/1.1
 content-type: application/json
@@ -8,4 +8,12 @@ content-type: application/json
 {
     "name": "Joao",
     "email": "joao@dev.com"
+}
+###
+POST http://localhost:3000/todos HTTP/1.1
+content-type: application/json
+x-user-id:00ec3cd3-c0d1-4469-ae48-79aa174443ae
+
+{
+    "title": "Fazer o Micro-SaaS"
 }
